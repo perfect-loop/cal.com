@@ -58,7 +58,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
 
 That's where Cal.com comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data.
 
-## Product of the Month: April
+## Product of the Month: April 2021
 
 #### Support us on [Product Hunt](https://www.producthunt.com/posts/calendso?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-calendso)
 
@@ -207,7 +207,7 @@ Be sure to set the environment variable `NEXTAUTH_URL` to the correct value. If 
 yarn test-e2e
 
 # To open last HTML report run:
-yarn workspace @calcom/web playwright-report
+yarn playwright show-report test-results/reports/playwright-html-report
 ```
 
 ### Upgrading from earlier versions
@@ -328,7 +328,7 @@ We have a list of [help wanted](https://github.com/orgs/calcom/projects/1/views/
 10. The key will be created and you will be redirected back to the Credentials page. Select the newly generated client ID under OAuth 2.0 Client IDs.
 11. Select Download JSON. Copy the contents of this file and paste the entire JSON string in the .env file as the value for GOOGLE_API_CREDENTIALS key.
 
-#### _Adding google calendar to Cal.com App Store_
+#### *Adding google calendar to Cal.com App Store*
 
 After adding Google credentials, you can now Google Calendar App to the app store.
 You can repopulate the App store by running
@@ -344,7 +344,6 @@ following
 
 1. Add extra redirect URL `<Cal.com URL>/api/auth/callback/google`
 1. Under 'OAuth concent screen', click "PUBLISH APP"
-
 ### Obtaining Microsoft Graph Client ID and Secret
 
 1. Open [Azure App Registration](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) and select New registration
@@ -362,7 +361,7 @@ Copy and paste the app manifest below into the setting on your slack app. Be sur
 
 <details>
   <summary>App Manifest</summary>
-  
+
  ```yaml
  display_information:
   name: Cal.com Slack
@@ -386,7 +385,7 @@ oauth_config:
     bot:
       - chat:write
       - commands
-      - chat:write.public 
+      - chat:write.public
 settings:
   interactivity:
     is_enabled: true
